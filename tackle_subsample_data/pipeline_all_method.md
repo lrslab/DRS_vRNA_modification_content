@@ -1,4 +1,4 @@
-# How we run all pipeline in our paper
+# How we run all pipelines in our paper
 ## Basecall and alignment
 ```sh
 ## basecall and alignment was applied on all dataset
@@ -94,7 +94,7 @@ xpore diffmod --config xpore.yml
 ```sh
 python DRUMMER.py -r SINV_Toto1101.fa -t ivt.bam -c wt.bam -p 1 -o DURMMER_result -a exome -n NC_001547.1 -m True
 ```
-## m6anet
+## m6Anet
 ```sh
 nanopolish eventalign --reads all.fastq --bam all.bam --genome SINV_Toto1101.fa \
 --scale-events --signal-index --summary /path/to/summary.txt  --threads 50 > eventalign.txt
