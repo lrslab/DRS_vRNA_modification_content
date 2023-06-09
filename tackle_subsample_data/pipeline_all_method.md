@@ -9,7 +9,6 @@ minimap2 -ax map-ont -t --MD16 SINV_Toto1101.fa all.fastq | samtools view -hbS -
 ## Quality control
 we used the tool from ONT called `pomoxis`, and plot the figure by our own code
 ```sh
-##
 stats_from_bam all.bam >stats_filtered.txt
 ```
 
