@@ -31,6 +31,10 @@ Rscript path/EpiNano/Epinano_DiffErr.R -k ivt/ivt.sum_err.csv -w wt/wt.sum_err.c
 ```sh
 python main.py -b wt/wt.bam -a ivt.bam -r SINV_Toto1101.fa -o differr.bed
 ```
+## ELIGOS2
+```sh
+ eligos2 pair_diff_mod -tbam wt.bam  -cbam ivt.bam  -reg gene.bed -ref SINV_Toto1101.fa -t 16 --pval 1 --oddR 0 --esb 0 -o eligos2_results 
+```
 ## nanocompore
 ```sh
 nanopolish index -d single/ all.fastq
