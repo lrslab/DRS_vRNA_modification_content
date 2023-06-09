@@ -1,12 +1,13 @@
 # How we run all pipeline in our paper
 ## Basecall and alignment
 ```sh
+## basecall and alignment was applied on all dataset
 guppy_basecaller -i ./single/ -s ./guppy_out -c rna_r9.4.1_70bps_hac.cfg --device auto --recursive
 cat */*.fastq>all.fastq
 minimap2 -ax map-ont -t --MD16 SINV_Toto1101.fa all.fastq | samtools view -hbS -F 260 - | samtools sort -@ 6 -o all.bam
 ```
 ## Quality control
-we used the tool from ONT called `pomoxis`
+we used the tool from ONT called `pomoxis`, and plot the figure by our own code
 ```sh
 ##
 stats_from_bam all.bam >stats_filtered.txt
