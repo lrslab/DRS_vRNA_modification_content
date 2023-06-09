@@ -61,7 +61,7 @@ tombo text_output browser_files --statistics-filename sample.level_samp_comp_det
   --fast5-basedirs wt/single/ --control-fast5-basedirs ivt/single/ \
   --browser-file-basename sample.level_samp_comp_detect --file-types difference
 ```
-### Tombo_de novo
+### tombo_de novo
 ```sh
 tombo detect_modifications de_novo --fast5-basedirs single/ \
     --statistics-file-basename sample.de_novo
@@ -100,7 +100,7 @@ m6anet dataprep --eventalign eventalign.txt \
 m6anet inference --input_dir m6anet_dataprep --out_dir m6anet_output  --n_processes 4 --num_iterations 1000
 ```
 
-##nanom6A
+## nanom6A
 ```sh
 multi_to_single_fast5 -i guppy -s single -t 40 --recursive
 
