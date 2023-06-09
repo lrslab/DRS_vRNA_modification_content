@@ -15,7 +15,7 @@ stats_from_bam all.bam >stats_filtered.txt
 
 ## Epinano
 EpiNano_Error utilizes the differences between two alignment files in basecalling errors (mismatches, insertions, and deletions) and the alterations in per-base qualities to predict modified bases.
-###  Mismatch
+###  mismatch
 ```sh
 python path/EpiNano/Epinano_Variants.py -n 20 -R SINV_Toto1101.fa -b ivt.bam -s path/EpiNano/misc/sam2tsv.jam --type t
 python path/EpiNano/Epinano_Variants.py -n 20 -R SINV_Toto1101.fa -b wt.bam -s path/EpiNano/misc/sam2tsv.jam --type t
@@ -27,7 +27,7 @@ python path/EpiNano/misc/Epinano_sumErr.py --file wt.plus_strand.per.site.csv --
 python path/EpiNano/misc/Epinano_sumErr.py --file ivt.plus_strand.per.site.csv --out ivt.sum_err.csv --kmer 0
 Rscript path/EpiNano/Epinano_DiffErr.R -k ivt/ivt.sum_err.csv -w wt/wt.sum_err.csv -o epinano_sumErr -f sum_err -d 0.1 -p
 ```
-## differr
+## Differr
 ```sh
 python main.py -b wt/wt.bam -a ivt.bam -r SINV_Toto1101.fa -o differr.bed
 ```
@@ -35,7 +35,7 @@ python main.py -b wt/wt.bam -a ivt.bam -r SINV_Toto1101.fa -o differr.bed
 ```sh
  eligos2 pair_diff_mod -tbam wt.bam  -cbam ivt.bam  -reg gene.bed -ref SINV_Toto1101.fa -t 16 --pval 1 --oddR 0 --esb 0 -o eligos2_results 
 ```
-## nanocompore
+## Nanocompore
 ```sh
 nanopolish index -d single/ all.fastq
 nanopolish eventalign --reads all.fastq --bam all.bam --genome SINV_Toto1101.fa --print-read-names --scale-events --samples > eventalign_reads.tsv
@@ -48,8 +48,8 @@ nanocompore sampcomp \
     --fasta SINV_Toto1101.fa \
     --outpath ./nanocompore_results
 ```
-## tombo
-### tombo_comp
+## Tombo
+### Tombo_comp
 ```sh
 # Single format is required to run tombo, tun ont-fast5-api firstly to transfer if needed.
 tombo preprocess annotate_raw_with_fastqs --fast5-basedir single/ --fastq-filenames all.fastq
@@ -66,12 +66,12 @@ tombo text_output browser_files --statistics-filename sample.level_samp_comp_det
   --fast5-basedirs wt/single/ --control-fast5-basedirs ivt/single/ \
   --browser-file-basename sample.level_samp_comp_detect --file-types difference
 ```
-### tombo_de novo
+### Tombo_de novo
 ```sh
 tombo detect_modifications de_novo --fast5-basedirs single/ \
     --statistics-file-basename sample.de_novo
 ```
-## xpore
+## Xpore
 ```sh
 nanopolish eventalign  --reads ivt.fastq --bam ivt.bam  --genome SINV_Toto1101.fa --scale-events > ivt.eventalign.txt
 nanopolish eventalign  --reads wt.fastq --bam wt.bam  --genome SINV_Toto1101.fa --scale-events > wt.eventalign.txt
@@ -105,7 +105,7 @@ m6anet dataprep --eventalign eventalign.txt \
 m6anet inference --input_dir m6anet_dataprep --out_dir m6anet_output  --n_processes 4 --num_iterations 1000
 ```
 
-## nanom6A
+## Nanom6A
 ```sh
 multi_to_single_fast5 -i guppy -s single -t 40 --recursive
 
