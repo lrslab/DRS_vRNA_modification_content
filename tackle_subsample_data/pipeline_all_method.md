@@ -13,7 +13,7 @@ we used the tool from ONT called `pomoxis`, and plot the figure by our own code
 stats_from_bam all.bam >stats_filtered.txt
 ```
 
-## Epinano
+## EpiNano
 EpiNano_Error utilizes the differences between two alignment files in basecalling errors (mismatches, insertions, and deletions) and the alterations in per-base qualities to predict modified bases.
 ###  mismatch
 ```sh
