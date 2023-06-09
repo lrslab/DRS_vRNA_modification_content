@@ -7,6 +7,6 @@ This git saved the main functions and scripts used in our paper.
 Our Direct RNA sequencing(DRS) data was uploaded to the [figshare](https://figshare.com/account/home#/projects/167354)
 ![alt text](pictures/igv.png)
 
-## Pipeline of RNA modification detection tools based on ONT
+## RNA modification detection tools based on ONT
 ![alt text](pictures/sample.png)
-All ten pipeline shells we ran were recorded [here](tackle_subsample_data/pipeline_all_method.md)
+All ten methods shells we ran were recorded [here](tackle_subsample_data/pipeline_all_method.md)
