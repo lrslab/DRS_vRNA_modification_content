@@ -10,3 +10,6 @@ Our Direct RNA sequencing(DRS) data was uploaded to the [figshare](https://figsh
 ## RNA modification detection tools based on ONT
 ![alt text](pictures/sample.png)
 All ten methods shells we ran were recorded [here](tackle_subsample_data/pipeline_all_method.md)
+
+## Data available
+[Review link](https://dataview.ncbi.nlm.nih.gov/object/PRJNA983926?reviewer=2evbg8unroe7c1juoo8a2p67bs)
