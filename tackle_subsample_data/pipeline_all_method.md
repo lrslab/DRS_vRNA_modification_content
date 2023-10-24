@@ -6,9 +6,8 @@
 guppy_basecaller -i ./single/ -s ./guppy_out -c rna_r9.4.1_70bps_hac.cfg --device auto --recursive
 cat */*.fastq>all.fastq
 
-
 ### Dorado
-dorado basecaller /t1/zhguo/Program/dorado/rna002_70bps_hac@v3 multi/ > all.bam 
+dorado basecaller rna002_70bps_hac@v3 multi/ > all.bam 
 bedtools bamtofastq -i all.bam -fq all.fastq
 
 ### Alignment
