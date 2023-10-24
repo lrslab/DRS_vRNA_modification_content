@@ -1,10 +1,19 @@
 # How we run all pipelines in our paper
 ## Basecall and alignment
 ```sh
-## basecall and alignment was applied on all dataset
+## basecall and alignment were applied on all dataset
+### Guppy
 guppy_basecaller -i ./single/ -s ./guppy_out -c rna_r9.4.1_70bps_hac.cfg --device auto --recursive
 cat */*.fastq>all.fastq
+
+
+### Dorado
+dorado basecaller /t1/zhguo/Program/dorado/rna002_70bps_hac@v3 multi/ > all.bam 
+bedtools bamtofastq -i all.bam -fq all.fastq
+
+### Alignment
 minimap2 -ax map-ont -t 16 --MD SINV_Toto1101.fa all.fastq | samtools view -hbS -F 260 - | samtools sort -@ 6 -o all.bam
+samtools index all.bam
 ```
 ## Quality control
 we used the tool from ONT called `pomoxis`, and plot the figure by our own code
