@@ -1,7 +1,6 @@
+from matplotlib_venn import venn2,venn2_circles,venn3
 import pandas as pd
 from matplotlib import pyplot as plt
-from matplotlib_venn import venn3
-
 plt.rcParams['font.family'] = 'sans-serif'
 plt.rcParams['font.sans-serif'] = ['Arial']
 plt.rcParams['pdf.fonttype'] = 42

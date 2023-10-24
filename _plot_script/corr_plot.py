@@ -1,7 +1,8 @@
 
-import pandas as pd
-from matplotlib import pyplot as plt
 from plotnine import *
+import pandas as pd
+
+from matplotlib import pyplot as plt
 
 plt.rcParams['pdf.fonttype'] = 42
 

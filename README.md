@@ -12,7 +12,7 @@ Our Direct RNA sequencing(DRS) data was uploaded to the [figshare](https://figsh
 All ten methods shells we ran were recorded [here](tackle_subsample_data/pipeline_all_method.md)
 
 ## Data available
-[Review link](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA983926)
+[NCBI link](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA983926)
 
-## Merge script for tombo and xPore available
-[Review link](https://github.com/lrslab/Scripts_merge_DRS_methods)
+## Script merge tombo and xPore 
+[Script link](https://github.com/lrslab/Scripts_merge_DRS_methods)

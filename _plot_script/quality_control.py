@@ -1,7 +1,7 @@
 import pandas as pd
-from matplotlib import pyplot as plt
+import numpy as np
 from plotnine import *
-
+from matplotlib import pyplot as plt
 plt.rcParams['pdf.fonttype'] = 42
 def extract_mis_ratio(df,mis,label):
     L_rep1 = pd.read_csv(df, sep='\t')

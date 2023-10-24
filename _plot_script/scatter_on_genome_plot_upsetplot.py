@@ -1,10 +1,10 @@
 
-from collections import OrderedDict
-
 import numpy as np
-import pandas as pd
-from matplotlib import pyplot as plt
 from plotnine import *
+import pandas as pd
+from collections import  OrderedDict
+
+from matplotlib import pyplot as plt
 
 plt.rcParams['pdf.fonttype'] = 42
 fasta_path="SINV_Toto1101.fa"
