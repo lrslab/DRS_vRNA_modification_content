@@ -16,3 +16,8 @@ All ten methods shells we ran were recorded [here](tackle_subsample_data/pipelin
 
 ## Script merge tombo and xPore 
 [Script link](https://github.com/lrslab/Scripts_merge_DRS_methods)
+
+## Citation
+Please kindly cite our paper if you found the scripts or resources useful in your study.
+
+Tan, L., Guo, Z., Wang, X., Kim, D. Y., & Li, R. (2024). Utilization of nanopore direct RNA sequencing to analyze viral RNA modifications. **Msystems**, 9(2), e01163-23.
